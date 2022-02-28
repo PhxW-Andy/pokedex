@@ -24,9 +24,7 @@ const PokemonDetail = () => {
 
     setIsLoading(false)
   }
-  setTimeout(() => {
-    console.log(detail)
-  }, 5000)
+
   useEffect(() => {
     getDetails()
   }, [])
