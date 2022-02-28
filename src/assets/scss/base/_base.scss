@@ -211,7 +211,7 @@ body {
             display: flex;
             flex-direction: column;
             &:last-of-type {
-              span {
+              span > span {
                 margin-bottom: 0 !important;
               }
             }

@@ -423,7 +423,7 @@ body {
           flex-direction: column;
 }
 
-.main-container .pokemon-grid .pokemon-grid__detail .detail__stats .stats-info > div:last-of-type span {
+.main-container .pokemon-grid .pokemon-grid__detail .detail__stats .stats-info > div:last-of-type span > span {
   margin-bottom: 0 !important;
 }
 
