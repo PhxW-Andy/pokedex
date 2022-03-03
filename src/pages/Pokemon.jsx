@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import PokemonCard from '../components/PokemonCard'
-import NavigationSearch from '../components/NavigationSearch'
+import Filter from '../components/Filter'
 import Loading from '../components/Loading'
 
 const Pokemon = ({
@@ -11,10 +11,7 @@ const Pokemon = ({
 }) => {
   return (
     <div className="pokemon-grid overview">
-      <NavigationSearch
-        pokemon={pokemon}
-        setFilteredPokemon={setFilteredPokemon}
-      />
+      <Filter pokemon={pokemon} setFilteredPokemon={setFilteredPokemon} />
       <div className="pokemon-grid__layout">
         {isLoading ? (
           <Loading />

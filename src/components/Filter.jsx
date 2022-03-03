@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
-const NavigationSearch = ({ setFilteredPokemon, pokemon }) => {
+const Filter = ({ setFilteredPokemon, pokemon }) => {
   const [value, setValue] = useState('')
 
   //set value from input field
   const onChange = (e) => {
     let value = e.target.value
-    setValue(value)
+    setValue(value.toLowerCase())
 
     if (value == '') {
       setFilteredPokemon(pokemon)
@@ -35,4 +35,4 @@ const NavigationSearch = ({ setFilteredPokemon, pokemon }) => {
   )
 }
 
-export default NavigationSearch
+export default Filter
